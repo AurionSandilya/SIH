@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institution Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+      <img src="default-logo.png" alt="Institution Logo" class="logo">
+      <h1 id="institution-name">Institution Portal</h1>
+      <p>Timetable Management System</p>
+    </div>
+
+    <h2>Student Login</h2>
+
+    <!-- Institution Dropdown -->
+    <div class="input-box">
+      <label for="institution">Select Institution</label>
+      <select id="institution">
+        <option value="default">-- Choose Institution --</option>
+        <option value="bright-academy">Assam Engineering College</option>
+        <option value="tech-college">Jorhat Engineering College</option>
+        <option value="global-school">Dhemaji Engineering College</option>
+      </select>
+    </div>
+
+    <div class="input-box">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your ID / Email">
+    </div>
+
+    <div class="input-box">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <button class="login-btn" onclick="validateLogin()">Login</button>
+    <p class="error" id="error-msg">Invalid username or password!</p>
+
+    <div class="extras">
+      <a href="#">Forgot Password?</a> | <a href="#">Contact Admin</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
